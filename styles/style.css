@@ -22,6 +22,9 @@ html {
 } */
 
 /* reusable */
+input:focus {
+  outline: none;
+}
 .container {
   max-width: 1170px;
   margin: 0 auto;
@@ -127,9 +130,7 @@ nav ul li a {
   font-size: 1.6rem;
   border: none;
 }
-.input_holder input:focus {
-  outline: none;
-}
+
 /* popular_tours */
 .popular_tours {
   margin-top: 100px;
@@ -311,4 +312,95 @@ nav ul li a {
 .package_btn {
   margin-top: 50px;
   text-align: center;
+}
+/* Perfect Place */
+.perfect_place {
+  margin-top: 100px;
+}
+.perfect_place_holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+.perfect_place_left p {
+  color: var(--gray_para_color);
+  font-size: 1.6rem;
+  margin: 16px 0;
+}
+.perfect_place_left ul li {
+  color: var(--title_color);
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 16px;
+}
+.see_btn {
+  margin-top: 32px;
+}
+/* newslatter */
+.newslatter {
+  margin-top: 100px;
+}
+.newslatter_holder {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.newslatter_left {
+  border-radius: 16px;
+  border: 1px solid var(--btn_color);
+  padding: 40px;
+}
+.newslatter_left h2 {
+  color: var(--title_color);
+  font-size: 2.4rem;
+}
+.newslatter_left p {
+  color: var(--gray_para_color);
+  font-size: 1.6rem;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+hr {
+  color: gray;
+  margin-bottom: 10px;
+}
+.newslatter_left input {
+  padding: 16px;
+  border-radius: 8px;
+  color: rgba(19, 19, 24, 0.5);
+  font-size: 1.6rem;
+  border: none;
+  background: rgba(19, 19, 24, 0.05);
+  width: 100%;
+  margin-top: 16px;
+}
+.subscribe_btn {
+  margin-top: 38px;
+  width: 100%;
+}
+.newslatter_right {
+  position: relative;
+}
+.newslatter_right img {
+  height: 100%;
+}
+.travel_discount span {
+  display: block;
+  color: #fff;
+  font-size: 2.4rem;
+}
+.travel_discount p {
+  font-size: 3.2rem;
+  color: #fff;
+}
+.travel_discount {
+  background-color: var(--btn_color);
+  padding: 20px 30px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  bottom: 13%;
+  transform: rotate(-20deg);
+  border-radius: 16px;
 }
