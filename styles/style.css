@@ -45,6 +45,11 @@ html {
   margin: 24px 0 50px;
   font-size: 1.6rem;
 }
+.destination_txt,
+.choose_us_content,
+.deals_txt {
+  text-align: center;
+}
 /* header */
 nav {
   padding: 50px 0;
@@ -160,11 +165,6 @@ nav ul li a {
 .destination {
   margin-top: 100px;
 }
-.destination_txt,
-.choose_us_content {
-  text-align: center;
-}
-
 .destination_img_holder {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -248,4 +248,67 @@ nav ul li a {
 .boxs p {
   color: #5a5a5d;
   font-size: 1.6rem;
+}
+/* Deals & Discounts */
+.deals {
+  margin-top: 100px;
+}
+.plans_holder {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.plans1 {
+  background-image: url(../Images/discount.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 50px 50px 500px;
+  border-radius: 16px;
+}
+.plans2 {
+  background-image: url(../Images/discount2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 500px 50px 50px;
+  border-radius: 16px;
+}
+.plan {
+  padding: 50px;
+  border-radius: 16px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2.5px);
+  min-width: 400px;
+}
+.plan_services {
+  display: inline-flex;
+  gap: 24px;
+}
+.plan_services p {
+  color: #5a5a5d;
+  font-size: 1.6rem;
+}
+.plans_details h2 {
+  color: #131318;
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-top: 26px;
+}
+.plans_details p {
+  color: #5a5a5d;
+  font-size: 1.6rem;
+  margin: 16px 0;
+}
+.plans_details h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--btn_color);
+}
+.book_btn {
+  margin-top: 24px;
+  border-radius: 0;
+}
+.package_btn {
+  margin-top: 50px;
+  text-align: center;
 }
