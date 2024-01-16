@@ -164,6 +164,33 @@ nav ul li a {
 .read_btn {
   margin-top: 32px;
 }
+/* features */
+.features {
+  margin-top: 100px;
+}
+.features_txt {
+  text-align: center;
+}
+.features_holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.features_box {
+  padding: 20px;
+  background-color: var(--btn_color);
+  border-radius: 16px;
+  color: #fff;
+}
+.features_box p {
+  font-size: 1.6rem;
+  margin-top: 10px;
+}
+.features_box i {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
 /* Destination section */
 .destination {
   margin-top: 100px;
@@ -433,3 +460,5 @@ hr {
   color: var(--title_color);
   font-size: 1.6rem;
 }
+
+/* responsive */
