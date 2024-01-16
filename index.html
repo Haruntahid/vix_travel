@@ -22,18 +22,26 @@
             <img src="./Images/logo.png" alt="logo" />
             <p>Vix <span class="travel">Travel</span></p>
           </div>
-          <ul>
+          <ul class="sidebar">
+            <li onclick="hideSidebar()">
+              <a href="#"><i class="fa-solid fa-xmark"></i></a>
+            </li>
             <li><a href="">Home</a></li>
             <li><a href="">Packages</a></li>
             <li><a href="">Testimonial</a></li>
             <li><a href="">Blog</a></li>
             <li><a href="">Contact</a></li>
           </ul>
-          <input type="checkbox" id="check" />
-          <label for="check">
-            <i class="fa-solid fa-bars" id="menu"></i>
-            <i class="fa-solid fa-xmark" id="cancel"></i>
-          </label>
+          <ul>
+            <li class="hideonMobile"><a href="">Home</a></li>
+            <li class="hideonMobile"><a href="">Packages</a></li>
+            <li class="hideonMobile"><a href="">Testimonial</a></li>
+            <li class="hideonMobile"><a href="">Blog</a></li>
+            <li class="hideonMobile"><a href="">Contact</a></li>
+            <li class="menubtn" onclick="showSidebar()">
+              <a href="#"><i class="fa-solid fa-bars"></i></a>
+            </li>
+          </ul>
         </nav>
 
         <div class="main_banner">
@@ -383,5 +391,16 @@
         <p class="copy">&copy;Vix Travel 2022, All Rights Reserved.</p>
       </div>
     </footer>
+
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
   </body>
 </html>

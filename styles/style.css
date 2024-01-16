@@ -89,15 +89,35 @@ nav ul li a {
   color: var(--link_color);
   font-size: 1.8rem;
 }
-label #menu,
-#cancel {
-  color: var(--btn_color);
-  font-size: 30px;
-  cursor: pointer;
+/* sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: var(--btn_color);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li {
+  width: 100%;
+  padding: 20px 0;
+  color: #fff;
+}
+.sidebar li a {
+  color: #fff;
+  width: 100%;
+}
+.menubtn {
   display: none;
 }
-#check {
-  display: none;
+.fa-xmark,
+.fa-bars {
+  font-size: 30px;
 }
 .main_banner {
   background-image: linear-gradient(
@@ -545,7 +565,8 @@ hr {
   }
   .plans1,
   .plans2 {
-    padding: 50px;
+    padding: 200px 50px 50px 50px;
+    min-height: 500px;
   }
   iframe,
   .perfect_place_right {
@@ -556,10 +577,89 @@ hr {
   }
   .travel_discount {
     padding: 15px 25px;
-    right: 1%;
-    bottom: 14%;
+    right: 2%;
+    bottom: 12%;
+  }
+  .travel_discount p {
+    font-size: 2.2rem;
+    color: #fff;
   }
   .footer {
     padding: 30px 0;
+  }
+  .hideonMobile {
+    display: none;
+  }
+  .menubtn {
+    display: block;
+  }
+}
+/* RESPONSIVE FOR TABLETS OR MEDIUM DEVICES */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .container {
+    padding: 0px 20px;
+  }
+  .banner_content {
+    padding: 30px 24px;
+  }
+  .input_holder {
+    gap: 16px;
+    flex-direction: column;
+    width: 100%;
+  }
+  .input_holder input,
+  select {
+    width: 100%;
+  }
+  .popular_tour_container,
+  .boxes_holder,
+  .perfect_place_holder,
+  .newslatter_holder {
+    flex-direction: column;
+  }
+  .popular_tour_right img {
+    width: 100%;
+  }
+  .features_holder {
+    gap: 10px;
+  }
+  .features_holder {
+    flex-wrap: wrap;
+  }
+  .features_box {
+    min-width: 220px;
+    text-align: center;
+  }
+  .boxs1,
+  .boxs2,
+  .another_box_holder {
+    width: 100%;
+  }
+  .plan {
+    padding: 30px;
+    min-width: 0;
+  }
+  .plans1,
+  .plans2 {
+    padding: 200px 50px 50px 50px;
+    min-height: 500px;
+  }
+  iframe,
+  .perfect_place_right {
+    width: 100%;
+  }
+  .newslatter_right img {
+    width: 100%;
+  }
+  .travel_discount {
+    right: 3%;
+    bottom: 12%;
+  }
+
+  .hideonMobile {
+    display: none;
+  }
+  .menubtn {
+    display: block;
   }
 }
