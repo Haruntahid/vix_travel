@@ -29,7 +29,13 @@
             <li><a href="">Blog</a></li>
             <li><a href="">Contact</a></li>
           </ul>
+          <input type="checkbox" id="check" />
+          <label for="check">
+            <i class="fa-solid fa-bars" id="menu"></i>
+            <i class="fa-solid fa-xmark" id="cancel"></i>
+          </label>
         </nav>
+
         <div class="main_banner">
           <div class="banner_content">
             <h1>Explore Your Travel</h1>
@@ -39,8 +45,13 @@
             </p>
             <div class="input_holder">
               <input placeholder="Where go" type="text" name="" id="" />
-              <input placeholder="When" type="text" name="" id="" />
-              <input placeholder="Select Type" type="text" name="" id="" />
+              <!-- <input placeholder="When" type="text" name="" id="" /> -->
+              <select name="when" id="">
+                <option value="none" selected>when</option>
+              </select>
+              <select name="when" id="">
+                <option value="none" selected>Select Type</option>
+              </select>
               <button class="common_btn find_btn">
                 <i class="fa-solid fa-magnifying-glass"></i>Find Now
               </button>
@@ -351,24 +362,26 @@
     </main>
     <!-- footer -->
     <footer class="footer">
-      <div class="footer_brand">
-        <img src="./Images/logo.png" alt="logo" />
-        <p>Vix <span class="travel">Travel</span></p>
-      </div>
-      <p class="footer_para">
-        Found a lower price for the same itinerary elsewhere? We've got you
-        covered.
-      </p>
-      <div class="social">
-        <a href=""><i class="fa-brands fa-twitter"></i></a>
-        <a href=""><i class="fa-brands fa-facebook"></i></a>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-github"></i></a>
-      </div>
       <div class="container">
-        <hr class="footer_devider" />
+        <div class="footer_brand">
+          <img src="./Images/logo.png" alt="logo" />
+          <p>Vix <span class="travel">Travel</span></p>
+        </div>
+        <p class="footer_para">
+          Found a lower price for the same itinerary elsewhere? We've got you
+          covered.
+        </p>
+        <div class="social">
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="container">
+          <hr class="footer_devider" />
+        </div>
+        <p class="copy">&copy;Vix Travel 2022, All Rights Reserved.</p>
       </div>
-      <p class="copy">&copy;Vix Travel 2022, All Rights Reserved.</p>
     </footer>
   </body>
 </html>

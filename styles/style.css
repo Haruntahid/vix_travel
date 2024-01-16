@@ -22,6 +22,9 @@ html {
 } */
 
 /* reusable */
+ul {
+  padding-left: 20px;
+}
 input:focus {
   outline: none;
 }
@@ -86,6 +89,16 @@ nav ul li a {
   color: var(--link_color);
   font-size: 1.8rem;
 }
+label #menu,
+#cancel {
+  color: var(--btn_color);
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
 .main_banner {
   background-image: linear-gradient(
       180deg,
@@ -124,7 +137,8 @@ nav ul li a {
   display: inline-flex;
   gap: 24px;
 }
-.input_holder input {
+.input_holder input,
+select {
   padding: 16px;
   width: 160px;
   border-radius: 8px;
@@ -312,7 +326,12 @@ nav ul li a {
 }
 .plan_services {
   display: inline-flex;
+  flex-wrap: wrap;
   gap: 24px;
+}
+.plan_services i {
+  margin-right: 8px;
+  color: var(--btn_color);
 }
 .plan_services p {
   color: #5a5a5d;
@@ -462,3 +481,85 @@ hr {
 }
 
 /* responsive */
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 0px 20px;
+  }
+  .banner_content {
+    padding: 30px 24px;
+  }
+  .input_holder {
+    gap: 16px;
+    flex-direction: column;
+    width: 100%;
+  }
+  .input_holder input,
+  select {
+    width: 100%;
+  }
+  .popular_tours,
+  .features,
+  .destination,
+  .choose_us,
+  .deals,
+  .perfect_place,
+  .newslatter,
+  .footer {
+    margin-top: 50px;
+  }
+  .popular_tour_container,
+  .features_holder,
+  .boxes_holder,
+  .perfect_place_holder,
+  .newslatter_holder {
+    flex-direction: column;
+  }
+  .popular_tour_right img {
+    width: 100%;
+  }
+  .features_holder {
+    gap: 10px;
+  }
+  .features_box {
+    min-width: 285px;
+    text-align: center;
+  }
+  .img1,
+  .img2,
+  .img3,
+  .img4,
+  .img5,
+  .img6,
+  .img7 {
+    grid-column: span 12;
+    max-height: 175px;
+  }
+  .boxs1,
+  .boxs2,
+  .another_box_holder {
+    width: 100%;
+  }
+  .plan {
+    padding: 30px;
+    min-width: 0;
+  }
+  .plans1,
+  .plans2 {
+    padding: 50px;
+  }
+  iframe,
+  .perfect_place_right {
+    width: 100%;
+  }
+  .newslatter_right img {
+    width: 100%;
+  }
+  .travel_discount {
+    padding: 15px 25px;
+    right: 1%;
+    bottom: 14%;
+  }
+  .footer {
+    padding: 30px 0;
+  }
+}
