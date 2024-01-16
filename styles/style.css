@@ -499,6 +499,9 @@ hr {
   color: var(--title_color);
   font-size: 1.6rem;
 }
+.sidebar {
+  display: none;
+}
 
 /* responsive */
 @media screen and (max-width: 576px) {
@@ -593,6 +596,9 @@ hr {
   .menubtn {
     display: block;
   }
+  .sidebar {
+    display: none;
+  }
 }
 /* RESPONSIVE FOR TABLETS OR MEDIUM DEVICES */
 @media screen and (min-width: 577px) and (max-width: 992px) {
@@ -655,11 +661,13 @@ hr {
     right: 3%;
     bottom: 12%;
   }
-
   .hideonMobile {
     display: none;
   }
   .menubtn {
     display: block;
+  }
+  .sidebar {
+    display: none;
   }
 }
